@@ -67,7 +67,7 @@ const HomePage = () => {
               </a>
               <ul className="dropdown-menu dropdown-menu-dark text-small shadow">
                 <li>
-                  <Link to="login" className="nav-link align-middle px-0">
+                  <Link to="/" className="nav-link align-middle px-0">
                     <a className="dropdown-item" href="#">
                       Sign out
                     </a>

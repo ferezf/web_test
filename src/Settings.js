@@ -1,4 +1,3 @@
-// Create HomeContent.js
 import React from "react";
 
 const HomeContent = () => {

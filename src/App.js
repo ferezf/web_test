@@ -1,5 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+} from "react-router-dom";
 import LoginPage from "./LoginPage";
 import HomePage from "./Homepage";
 import HomeContent from "./HomeContent";
@@ -12,9 +17,8 @@ const App = () => {
   return (
     <Router>
       <Routes>
-        {/* Login Page Route */}
-        <Route path="/" element={<LoginPage />} />
-        {/* Home Page Route */}
+        <Route path="/" element={<Navigate to="/login" />} />
+        <Route path="/login" element={<LoginPage />} />
         <Route path="/home" element={<HomePage />}>
           <Route index element={<HomeContent />} />
           <Route path="profile" element={<ProfileContent />} />

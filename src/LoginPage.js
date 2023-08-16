@@ -13,7 +13,7 @@ const LoginPage = () => {
 
     if (username === validUsername && password === validPassword) {
       setError("");
-      navigate("/");
+      navigate("/home");
     } else {
       setError("Invalid username or password");
     }

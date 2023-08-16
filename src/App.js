@@ -14,7 +14,6 @@ const App = () => {
       <Routes>
         {/* Login Page Route */}
         <Route path="/" element={<LoginPage />} />
-
         {/* Home Page Route */}
         <Route path="/home" element={<HomePage />}>
           <Route index element={<HomeContent />} />

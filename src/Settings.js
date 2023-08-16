@@ -5,7 +5,6 @@ const HomeContent = () => {
   return (
     <div>
       <h3>Home Content</h3>
-      {/* Your home content goes here */}
     </div>
   );
 };

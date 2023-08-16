@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import "datatables.net-dt/css/jquery.dataTables.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
-import App from "./App"; // Your main component
+import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(

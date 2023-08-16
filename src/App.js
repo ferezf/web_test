@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import LoginPage from "./LoginPage";
+import HomePage from "./Homepage";
+import HomeContent from "./HomeContent";
+import ProfileContent from "./ProfileContent";
+import MessagesContent from "./MessagesContent";
+import SettingsContent from "./SettingsContent";
+import "datatables.net-dt/css/jquery.dataTables.css";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/" element={<HomePage />}>
+          <Route index element={<HomeContent />} />
+          <Route path="profile" element={<ProfileContent />} />
+          <Route path="messages" element={<MessagesContent />} />
+          <Route path="settings" element={<SettingsContent />} />
+          <Route path="login" element={<LoginPage />} />
+        </Route>
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;

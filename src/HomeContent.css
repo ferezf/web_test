@@ -1,0 +1,36 @@
+/* HomeContent.css */
+.tree-nav__item-title {
+    cursor: pointer;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .tree-nav__item {
+    margin-left: 20px;
+  }
+  
+  .display {
+    width: 100% !important;
+  }
+  
+  .mt-4 {
+    margin-top: 1.5rem;
+  }
+  
+  .tree-nav__item {
+    padding-left: 15px;
+  }
+  .table-container {
+    overflow-x: auto; /* Add horizontal scroll if needed */
+  }
+  /* Adjust the size of the icons */
+.btn i.icon {
+    font-size: 15px; /* Adjust the font size as needed */
+    vertical-align: middle;
+  }
+  /* Adjust the positioning of the delete button */
+.delete-button {
+    margin-top: 5px;
+    margin-left: 12px; /* Adjust the value as needed */
+  }
+  

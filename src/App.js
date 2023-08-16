@@ -12,13 +12,15 @@ const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/login" element={<LoginPage />} />
-        <Route path="/" element={<HomePage />}>
+        {/* Login Page Route */}
+        <Route path="/" element={<LoginPage />} />
+
+        {/* Home Page Route */}
+        <Route path="/home" element={<HomePage />}>
           <Route index element={<HomeContent />} />
           <Route path="profile" element={<ProfileContent />} />
           <Route path="messages" element={<MessagesContent />} />
           <Route path="settings" element={<SettingsContent />} />
-          <Route path="login" element={<LoginPage />} />
         </Route>
       </Routes>
     </Router>
